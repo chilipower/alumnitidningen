@@ -16,6 +16,9 @@
 % Todo under arbete
 \usepackage{todonotes}
 
+% Använd hyperrefs
+\usepackage{hyperref}
+
 %%%%%%%%%%%%%%%%%%%
 % Definiera saker %
 %%%%%%%%%%%%%%%%%%%
@@ -139,10 +142,13 @@ efter utbildningen.}{img/tbi_alumni_liten.png}{}{Sida 6}{}
 % Vädret på campus %
 %%%%%%%%%%%%%%%%%%%%
 
-\begin{weatherblock}{VÄDRET CAMPUS VALLA}
-%\weatheritem{img/weather/bob_sol.png}{IDAG}{2}{2}{}
-%\weatheritem{img/weather/bob_sol.png}{TODAY}{13}{9}{}
+\begin{weatherblock}{LIVET PÅ CAMPUS VALLA}
+%\weatheritem{img/weather/bob_sol.png}{}{}{}{}
+%\weatheritem{img/weather/bob_regn.png}{}{}{}{}
+%\weatheritem{img/weather/bob_examen.png}{}{}{}{}
+
 \end{weatherblock}
+
 \end{frontpage}
 
 
@@ -158,33 +164,44 @@ efter utbildningen.}{img/tbi_alumni_liten.png}{}{Sida 6}{}
 
 \input{ordforande.tex}
 
-\newssep
+%\newssep
+\clearpage
 
 \input{bi6.tex}
 
-\newssep
+%\newssep
 
-%\clearpage
+
+\input{btd.tex}
+
+%\newssep
+
+\clearpage
 \input{forskning.tex}
 
-\newssep
-%\clearpage
-\input{btd.tex}
+%\newssep
+\clearpage
+
+
 
 \newssep
 
 \input{igem.tex}
 
-\newssep
+%\newssep
+\clearpage
 
 \input{tbi_alumn.tex}
 
-\newssep
+%\newssep
+\clearpage 
 
 \input{studenthus.tex}
 
-%\clearpage
+\clearpage
 
 \input{alumniutskottet.tex}
+
+%\input{referenser.tex}
 
 \end{document}
