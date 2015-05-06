@@ -26,12 +26,18 @@
 
 
 
-% Sätt loga på tidningen
+% Sätt en catchline
+\newcommand{\editionText}{Till alla TBi-sektionens alumner - Störst, bäst och vackrast!}
 
-\renewcommand{\logo}{\mylogo{\noindent\hrulefill{\fontsize{10mm}{14mm} \usefont{T1}{pag}{m}{n} \textcolor{black}{Ver 0.3 ALUMNITIDNINGEN}}\\[3pt]}}
+% Sätt tidningens rubrik och loggor
+\renewcommand{\logo}{\noindent\hfill {\fontsize{10mm}{14mm} \usefont{T1}{pag}{m}{n} ALUMNITIDNINGEN 2015}\\[3pt] \hline}}
+\renewcommand{\minilogo}{}
+\renewcommand{\date}{}
+\renewcommand{\mylogo}{}
+\renewcommand{\timestampFormat}{}
 
-
-%\renewcommand{\logo}{\mylogo{img/tbi_mini.jpg}}
+% Omdefiniera headers
+\heading{{\usefont{T1}{pag}{m}{n} ALUMNITIDNINGEN 2015}{}{\textcolor{color}{\small\editionText}\hspace*{5pt}\thepage\ / \pageref{LastPage}}
 
 % Bli av med 'h'
 \renewcommand{\timestampTxt}{}
@@ -39,8 +45,7 @@
 % Sätt titel och författare
 \author{Alumniutskottet}
 \title{my first paperTeX}
-\edition{Till alla TBi-sektionens alumner - Störst, bäst och vackrast!}
-
+\edition{\editionText}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -119,7 +124,6 @@ efter utbildningen.}{img/tbi_alumni_liten.png}{}{Sida 6}{}
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{indexblock}{I detta nummer...}
-
 \indexitem{Ledare med vår käre alumniansvarige Omid Philip Thern}{2}
 
 \indexitem{Tre snabba: TBi-ordförande Mona Mrad har ordet.}{2}
@@ -129,7 +133,6 @@ efter utbildningen.}{img/tbi_alumni_liten.png}{}{Sida 6}{}
 \indexitem{Bioteknikdagarna på LiU: En lyckad tillställning med mingel, mässa och sittingar.}{3}
 
 \indexitem{Tredje året i rad för Linköpings iGEM-lag.}{5}
-
 \end{indexblock}
 
 
